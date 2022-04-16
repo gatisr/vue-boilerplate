@@ -1,0 +1,13 @@
+{
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.localesPaths": [
+        "src/locales"
+    ],
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+        // For Stylelint
+        "source.fixAll.stylelint": true
+    },
+    "eslint.validate": ["javascript"]
+}
