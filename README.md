@@ -53,10 +53,10 @@ Recommended IDE:
     docker compose -f ./docker-compose.dev.yml up -d
     ```
 
-2. Run /bin/bash in container:
+2. Run shell in container:
 
     ```bash
-    docker exec -it app_name-front /bin/bash
+    docker exec -it app_name-front sh
     ```
 
 3. Build & Run dev server:
