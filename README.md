@@ -34,6 +34,8 @@ Extras:
 - [ESLint](https://eslint.org/)
 - [Yarn](https://yarnpkg.com/)
 - [Docker dev configuration](https://docker.com/)
+- Dark theme
+- Page 404
 
 Recommended IDE:
 
