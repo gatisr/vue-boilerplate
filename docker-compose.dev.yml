@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app_name-front:
+    image: node:lts
+    container_name: app_name-front
+    working_dir: /var/www/html/app/
+    entrypoint: /bin/bash
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 3000:3000
+    volumes: [ ./:/var/www/html/app ]
+    tty: true
