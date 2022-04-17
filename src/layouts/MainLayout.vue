@@ -1,58 +1,36 @@
 <template>
-  <div class="constrained bg-grey-2">
-    <QLayout view="hHR lpr lfr">
-      <QHeader bordered class="bg-white text-primary">
-        <QToolbar>
-          <QBtn
-            flat
-            round
-            dense
-            icon="mdi-menu"
-            class="q-mr-sm"
-            @click="leftDrawerOpen = !leftDrawerOpen"
-          />
-          <QToolbarTitle>{{ $t("global.siteName") }}</QToolbarTitle>
-          <QBtn flat round dense icon="mdi-theme-light-dark" />
-        </QToolbar>
-      </QHeader>
-      <QDrawer
-        show-if-above
-        v-model="leftDrawerOpen"
-        @before-hide="leftDrawerOpen = false"
-        content-class="bg-white"
-        :width="320"
-      >
-        {{ $t("global.leftMenu") }}
-      </QDrawer>
-      <QPageContainer class="bg-grey-2">
-        <router-view />
-      </QPageContainer>
-    </QLayout>
-  </div>
+  <QLayout view="hHh LpR fFf">
+    <QHeader reveal bordered height-hint="98">
+      <QToolbar>
+        <QToolbarTitle>{{ $t("global.siteName") }}</QToolbarTitle>
+        <QBtn v-on:click="$q.dark.toggle" flat round dense icon="mdi-theme-light-dark" />
+      </QToolbar>
+      <QTabs align="center">
+        <QRouteTab to="/" label="Home" />
+        <QRouteTab to="about" label="About" />
+      </QTabs>
+    </QHeader>
+    <QPageContainer>
+      <router-view />
+    </QPageContainer>
+    <QFooter reveal bordered class="bg-grey-11 text-white">
+      <QToolbar>
+        <QToolbarTitle align="right">
+          <QChip clickable icon="mdi-github" v-on:click="openGithub">
+            gatisr
+          </QChip>
+        </QToolbarTitle>
+      </QToolbar>
+    </QFooter>
+  </QLayout>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { openURL } from 'quasar';
 
-const leftDrawerOpen = ref(true);
+const openGithub = () => openURL('https://github.com/gatisr');
 </script>
 
 <style type="text/css">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-
-.constrained {
-    width: 100%;
-    height: 100%;
-}
-
-.constrained .q-layout,
-.constrained .q-header,
-.constrained .q-footer {
-    margin: 0 auto;
-    /* max-width: 1245px !important; */
-}
-
-.nav-btn {
-    min-width: 90px;
-}
 </style>
