@@ -5,7 +5,7 @@
 - [<APP_NAME>](#app_name)
     - [APP_NAME specifications](#app_name-specifications)
     - [Development](#development)
-    - [Development by using Docker](#development-by-using-docker)
+    - [Development with Docker](#development-with-docker)
 
 <!-- /TOC -->
 
@@ -45,7 +45,7 @@ Recommended IDE:
     yarn dev
     ```
 
-## Development by using Docker
+## Development with Docker
 
 1. Run container:
 
@@ -53,10 +53,10 @@ Recommended IDE:
     docker compose -f ./docker-compose.dev.yml up -d
     ```
 
-2. Run /bin/bash in container:
+2. Run shell in container:
 
     ```bash
-    docker exec -it app_name-front /bin/bash
+    docker exec -it app_name-front sh
     ```
 
 3. Build & Run dev server:
