@@ -4,7 +4,9 @@
     "scripts": {
         "dev": "vite --host",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "lint-check": "eslint .",
+        "lint": "eslint . --fix"
     },
     "dependencies": {
         "@quasar/extras": "^1.13.5",

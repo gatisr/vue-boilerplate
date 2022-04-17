@@ -5,7 +5,7 @@
 - [<APP_NAME>](#app_name)
     - [APP_NAME specifications](#app_name-specifications)
     - [Development](#development)
-    - [Development by using Docker](#development-by-using-docker)
+    - [Development with Docker](#development-with-docker)
 
 <!-- /TOC -->
 
@@ -45,7 +45,7 @@ Recommended IDE:
     yarn dev
     ```
 
-## Development by using Docker
+## Development with Docker
 
 1. Run container:
 
