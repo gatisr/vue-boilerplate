@@ -13,7 +13,7 @@
     <QPageContainer>
       <router-view />
     </QPageContainer>
-    <QFooter reveal bordered class="bg-grey-11 text-white">
+    <QFooter reveal bordered>
       <QToolbar>
         <QToolbarTitle align="right">
           <QChip clickable icon="mdi-github" v-on:click="openGithub">
