@@ -1,6 +1,15 @@
 {
-    "global": {
-        "siteName": "<APP_NAME>",
-        "leftMenu": "Izvēlne"
+  "global": {
+    "siteName": "<APP_NAME>",
+    "leftMenu": "Izvēlne",
+    "page": {
+      "notFound": "Lapa nav atrasta <b>(404)</b>",
+      "goBack": "Iet Atpakaļ",
+      "goHome": "Iet uz Sākumu"
+    },
+    "menu": {
+      "home": "Sākums",
+      "about": "Par"
     }
+  }
 }

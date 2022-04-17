@@ -6,8 +6,8 @@
         <QBtn v-on:click="$q.dark.toggle" flat round dense icon="mdi-theme-light-dark" />
       </QToolbar>
       <QTabs align="center">
-        <QRouteTab to="/" label="Home" />
-        <QRouteTab to="about" label="About" />
+        <QRouteTab to="/" :label="$t('global.menu.home')" />
+        <QRouteTab to="about" :label="$t('global.menu.about')" />
       </QTabs>
     </QHeader>
     <QPageContainer>
