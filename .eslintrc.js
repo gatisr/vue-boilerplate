@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['vite.config.js'],
+  ignorePatterns: ['vite.config.js', 'jsconfig.js'],
   settings: {
     'import/resolver': {
       alias: {

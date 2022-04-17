@@ -5,13 +5,18 @@
 <!-- TOC -->
 
 - [<APP_NAME>](#app_name)
-    - [APP_NAME specifications](#app_name-specifications)
+    - [How to use](#how-to-use)
+    - [<APP_NAME> specifications](#app_name-specifications)
     - [Development](#development)
     - [Development with Docker](#development-with-docker)
 
 <!-- /TOC -->
 
-## APP_NAME specifications
+## How to use
+
+Find and replace all `<APP_NAME>` and `app_name` with your desired app name & start to develop
+
+## <APP_NAME> specifications
 
 Vue template with:
 
@@ -20,6 +25,7 @@ Vue template with:
 - [Pinia (de facto Vuex 5)](https://pinia.vuejs.org/)
 - [Vue Router 4](https://next.router.vuejs.org/guide/)
 - [Quasar](https://quasar.dev/)
+  - [Material design icons](https://materialdesignicons.com/)
 - [Vue I18n](https://kazupon.github.io/vue-i18n/)
 
 Extras:

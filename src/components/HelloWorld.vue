@@ -1,38 +1,17 @@
-<script setup lang="ts">
-import useAppState from '~/stores/appState';
-
-const appState = useAppState();
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-  </p>
-
-  <p>
-    See
-    <code>README.md</code> for more information.
-  </p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Docs</a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button type="button" @click="appState.counter++">count is: {{ appState.counter }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div class="column items-center">
+    <h1>{{ msg }}</h1>
+    <p><QBtn flat type="a" href="https://v3.vuejs.org/" target="_blank" color="primary" label="Vue3" /></p>
+    <p><QBtn flat type="a" href="https://vitejs.dev/" target="_blank" color="primary" label="Vite" /></p>
+    <p><QBtn flat type="a" href="https://pinia.vuejs.org/" target="_blank" color="primary" label="Pinia (de facto Vuex 5)" /></p>
+    <p><QBtn flat type="a" href="https://next.router.vuejs.org/guide/" target="_blank" color="primary" label="Vue Router 4" /></p>
+    <p><QBtn flat type="a" href="https://quasar.dev/" target="_blank" color="primary" label="Quasar" /></p>
+    <p><QBtn flat type="a" href="https://materialdesignicons.com/" target="_blank" color="primary" label="Material design icons" /></p>
+    <p><QBtn flat type="a" href="https://kazupon.github.io/vue-i18n/" target="_blank" color="primary" label="Vue I18n" /></p>
+  </div>
 </template>
 
 <script lang="ts">
-
 export default {
   props: {
     msg: {
@@ -42,21 +21,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-a {
-    color: #42b983;
-}
-
-label {
-    margin: 0 0.5em;
-    font-weight: bold;
-}
-
-code {
-    background-color: #eee;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #304455;
-}
-</style>
