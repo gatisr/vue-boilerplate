@@ -62,7 +62,7 @@ Recommended IDE:
 3. Build & Run dev server:
 
     ```bash
-    yarn && yarn dev-docker
+    yarn && yarn dev
     ```
 
 - Stop docker container:
