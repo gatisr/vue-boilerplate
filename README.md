@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/gatisr/vue-boilerplate/badge/master)](https://www.codefactor.io/repository/github/gatisr/vue-boilerplate/overview/master)
+
 # <APP_NAME>
 
 <!-- TOC -->
